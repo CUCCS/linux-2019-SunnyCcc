@@ -241,6 +241,22 @@ sudo mv ubuntu-server-autoinstall.seed ~/copydir/preseed/
 
 ![](/0x01/images/diff9.jpg)
 
+## 四、实验中出现的问题
+
+- 如何在虚拟机和宿主机之间传输文件？
+
+  参考实验报告想安装putty，后来发现mac 系统自带有 ssh 的全套命令行客户端，不需要再额外安装 putty 了。
+
+- 呆板盲目参考他人实验报告，直接复制粘贴。
+
+  在新建目录名称不一样的前提下直接复制粘贴他人代码，导致命令运行失误。
+
+- 排错能力不足、没有耐心。遇到问题直接熄火不干。
+
+  不加思考复制粘贴他人代码，不理解命令实际含义，以至于代码执行后得到的并不是期望的 `.seed` 文件，实际上是一个 HTML 文件。
+
+- 做实验简单粗暴，增强功能都没有安装时傻乎乎地手敲命令。
+
 # 参考链接
 
 [CUCCS/linux-2019-LeLeF](https://github.com/CUCCS/linux-2019-LeLeF/blob/29769e9d5195105c5c54a22e0d7edd0400f95f3d/chap0x01VirtualBox%20无人值守安装Unbuntu系统实验/chap0x01%20VirtualBox%20无人值守安装Unbuntu系统实验.md)
