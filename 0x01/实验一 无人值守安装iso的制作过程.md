@@ -16,7 +16,7 @@
 
 - 先「有人值守」方式安装好 **一个可用的 Ubuntu 系统环境** , 首先在virtualbox安装ubuntu-18.04-server-amd64，用```ifconfig -a ```查看网络接口配置信息，启用```dhcp```
 
-```bash
+```shell
 # 启用dhcp
 sudo dhclient enp0s8
 ```
@@ -109,7 +109,7 @@ sudo vi isolinux/isolinux.cfg
 
 ```bash
 # 下载已经定制好的ubuntu-server-autoinstall.seed
-~~sudo wget https://github.com/c4pr1c3/LinuxSysAdmin/blob/master/exp/chap0x01/cd-rom/preseed/ubuntu-server-autoinstall.seed~~
+sudo wget https://github.com/c4pr1c3/LinuxSysAdmin/blob/master/exp/chap0x01/cd-rom/preseed/ubuntu-server-autoinstall.seed
 # 移动到指定目录下
 sudo mv ubuntu-server-autoinstall.seed ~/copydir/preseed/
 ```
@@ -137,7 +137,7 @@ sudo mv /tmp/md5sum.txt md5sum.txt
 sudo vim shell
 # 添加以下内容到shell文件中
 IMAGE=custom.iso
-BUILD=~/cd/
+BUILD=~/copydir/
 
 mkisofs -r -V "Custom Ubuntu Install CD" \
           -cache-inodes \
@@ -181,7 +181,7 @@ sudo apt install genisoimage
 
 ```bash
 # 下载已经定制好的ubuntu-server-autoinstall.seed
-~~sudo wget https://github.com/c4pr1c3/LinuxSysAdmin/blob/master/exp/chap0x01/cd-rom/preseed/ubuntu-server-autoinstall.seed~~
+sudo wget https://github.com/c4pr1c3/LinuxSysAdmin/blob/master/exp/chap0x01/cd-rom/preseed/ubuntu-server-autoinstall.seed
 # 移动到指定目录下
 sudo mv ubuntu-server-autoinstall.seed ~/copydir/preseed/
 ```
@@ -198,9 +198,11 @@ sudo mv ubuntu-server-autoinstall.seed ~/copydir/preseed/
 
   ![](/0x01/images/ls_seed.jpg)
 
+- 重新执行2、3部分操作
+
 ### 4、无人值守iso镜像录屏
 
-[无人值守iso镜像录屏链接]()
+[无人值守iso镜像录屏链接](http://www.iqiyi.com/w_19s6w3qp3t.html)
 
 # 参考链接
 
@@ -210,4 +212,3 @@ sudo mv ubuntu-server-autoinstall.seed ~/copydir/preseed/
 
 [CUCCS/linux-2019-FukurouNarthil](https://github.com/CUCCS/linux-2019-FukurouNarthil/blob/68242ef682cd9466c23013e7bcc82ecf8dc5ec53/exp0x01/exp0x01.md)
 
-ncv xz
