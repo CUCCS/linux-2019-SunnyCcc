@@ -46,6 +46,21 @@ service ssh restart
 
 ![](/0x01/images/ssh.jpg)
 
+- 免密登录
+
+```shell
+# 生成密钥对：
+ssh-keygen -t rsa
+
+# 将公钥发送至服务器：
+ssh-copy-id cookie@192.168.68.3
+
+# 远程登录：
+ssh cookie@192.168.68.3
+```
+
+![](/0x01/images/no_password.jpg)
+
 # 三、实验过程
 
 ## 1、创建iso镜像文件
@@ -203,6 +218,28 @@ sudo mv ubuntu-server-autoinstall.seed ~/copydir/preseed/
 ### 4、无人值守iso镜像录屏
 
 [无人值守iso镜像录屏链接](http://www.iqiyi.com/w_19s6w3qp3t.html)
+
+### 5、 对比ubuntu-server-autoinstall.seed和example-preseed.txt
+
+使用[文本对比工具](https://www.diffchecker.com/diff),左边为ubuntu-server-autoinstall.seed，右边为example-preseed.txt
+
+![](/0x01/images/diff1.jpg)
+
+![](/0x01/images/diff2.jpg)
+
+![](/0x01/images/diff3.jpg)
+
+![](/0x01/images/diff4.jpg)
+
+![](/0x01/images/diff5.jpg)
+
+![](/0x01/images/diff6.jpg)
+
+![](/0x01/images/diff7.jpg)
+
+![](/0x01/images/diff8.jpg)
+
+![](/0x01/images/diff9.jpg)
 
 # 参考链接
 
