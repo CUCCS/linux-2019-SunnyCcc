@@ -1,4 +1,4 @@
-# chap0x03 Systemd入门
+# Systemd入门
 
 ## 实验目的
 
@@ -43,7 +43,7 @@
 
 **1. 如何添加一个用户并使其具备sudo执行程序的权限？**
 
-```
+```bash
 # 添加一个new用户
 sudo adduser new
 
@@ -53,14 +53,14 @@ sudo adduser new sudo
 
 **2. 如何将一个用户添加到一个用户组？**
 
-```
+```bash
 # 将new用户加入用户组内
 sudo adduser new 组名
 ```
 
 **3. 如何查看当前系统的分区表和文件系统详细信息？**
 
-```
+```bash
 # 查看当前系统分区表
 sudo fdisk -l
 sudo sfdisk -l
@@ -73,7 +73,7 @@ df -a
 
 - VirtualBox的`共享文件夹`
 
-```
+```bash
 # 手动配置
 # 新建挂载目录
 mkdir ~/shared
@@ -92,7 +92,7 @@ sudo gedit /etc/modules
 
 使用 LVM2 工具集
 
-```
+```bash
 # 查看逻辑卷信息
 lvdisplay
 
@@ -112,7 +112,7 @@ lvresize --size +3g /dev/bogon-vg/root
 
 - 修改`NetworkManager.service`配置文件的Service区块
 
-```
+```bash
 # 连通时运行此脚本
 ExecStartPost = x.service
 
