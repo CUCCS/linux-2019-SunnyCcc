@@ -12,7 +12,6 @@ before_install:
 
 script:
   - bash test.sh
-  
   - bash 0x04/image.sh 0x04/images -h
   - bash 0x04/image.sh 0x04/images -c 50
   - bash 0x04/image.sh 0x04/images -p XXX -s YYY
