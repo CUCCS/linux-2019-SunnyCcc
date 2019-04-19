@@ -20,16 +20,16 @@
  bash image.sh  /home/cookie/Desktop/images -h
 ```
 
-![](/0x04/images/image_help.jpg)
+![](/0x04/image_help.jpg)
 
 ```bash
 # 对jpeg格式图片进行图片质量压缩
  bash image.sh  /home/cookie/Desktop/0x04/images -c 50
 ```
 
-![](/0x04/images/image_com0.jpg)
+![](/0x04/image_com0.jpg)
 
-![](/0x04/images/image_com1.jpg)
+![](/0x04/image_com1.jpg)
 
 ```bash
 # 批量重命名（统一添加文件名前缀或后缀，不影响原始文件扩展名）
@@ -37,21 +37,21 @@
 bash image.sh  /home/cookie/Desktop/images -p XXX -s YYY
 ```
 
-![](/0x04/images/image_pre.jpg)
+![](/0x04/image_pre.jpg)
 
 ```bash
 # 支持将png/svg图片统一转换为jpg格式图片
 bash image.sh -t -i test.svg -o output.jpg
 ```
 
-![](/0x04/images/image_trans.jpg)
+![](/0x04/image_trans.jpg)
 
 ```bash
 # 支持对图片批量添加自定义文本水印
 bash image.sh  /home/cookie/Desktop/0x04/images -w cookie
 ```
 
-![](/0x04/images/image_mark.jpg)
+![](/0x04/image_mark.jpg)
 
 ## 任务二
 
@@ -116,9 +116,7 @@ Jô
  bash weblog.sh web_log.tsv -h
 ```
 
-![weblog_help](/Users/cookie/Documents/GitHub/linux-2019-SunnyCcc/0x04/weblog_help.jpg)
-
-
+![](/0x04/weblog_help.jpg)
 
 ```bash
 # 统计访问来源主机TOP 100和分别对应出现的总次数
@@ -453,33 +451,17 @@ bash weblog.sh web_log.tsv -u
 
 ```bash
 # 统计不同响应状态码的出现次数和对应百分比
-bash weblog.sh web_log.tsv -x
+bash weblog.sh web_log.tsv -r
 ```
 
 ```bash
-403
-/software/winvn/winvn.html/wvsmall.gif                      32        
-/software/winvn/winvn.html/winvn.gif                        32        
-/software/winvn/winvn.html/bluemarb.gif                     32        
-/ksc.html/images/ksclogo-medium.gif                         12        
-/ksc.html/images/WORLD-logosmall.gif                        10        
-/ksc.html/images/USA-logosmall.gif                          10        
-/ksc.html/images/NASA-logosmall.gif                         10        
-/ksc.html/images/MOSAIC-logosmall.gif                       10        
-/ksc.html/facts/about_ksc.html                              5         
-/ksc.html/shuttle/missions/missions.html                    4         
- 
-404
-/pub/winvn/readme.txt                                       1337      
-/pub/winvn/release.txt                                      1185      
-/shuttle/missions/STS-69/mission-STS-69.html                683       
-/images/nasa-logo.gif                                       319       
-/shuttle/missions/sts-68/ksc-upclose.gif                    253       
-/elv/DELTA/uncons.htm                                       209       
-/history/apollo/sa-1/sa-1-patch-small.gif                   200       
-/://spacelink.msfc.nasa.gov                                 166       
-/images/crawlerway-logo.gif                                 160       
-/history/apollo/a-001/a-001-patch-small.gif                 154       
+200        1398987     89.113923%
+304        134146       8.544952%
+302        26497        1.687830%
+404        10055        0.640492%
+403        171          0.010893%
+501        27           0.001720%
+500        3            0.000191%
 ```
 
 
