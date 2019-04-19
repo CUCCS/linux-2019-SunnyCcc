@@ -12,9 +12,13 @@ before_install:
 
 script:
   - bash test.sh
+  - bash 0x04/image.sh
+  - bash 0x04/worldcup.sh
+  - bash 0x04/weblog.sh
 
 after_script:
   - /usr/bin/shellcheck test.sh
+  - /usr/bin/shellcheck *.sh
 
 after_failure:
   - id
