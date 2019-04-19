@@ -12,9 +12,20 @@ before_install:
 
 script:
   - bash test.sh
-  - bash 0x04/image.sh
-  - bash 0x04/worldcup.sh
-  - bash 0x04/weblog.sh
+  
+  - bash 0x04/image.sh 0x04/images -h
+  - bash 0x04/image.sh 0x04/images -c 50
+  - bash 0x04/image.sh 0x04/images -p XXX -s YYY
+  - bash 0x04/image.sh 0x04/images -w cookie
+  - bash 0x04/worldcup.sh 0x04/worldcupplayerinfo.tsv
+  - bash 0x04/weblog.sh 0x04/web_log.tsv -h
+  - bash 0x04/weblog.sh 0x04/web_log.tsv -H
+  - bash 0x04/weblog.sh 0x04/web_log.tsv -i
+  - bash 0x04/weblog.sh 0x04/web_log.tsv -u
+  - bash 0x04/weblog.sh 0x04/web_log.tsv -x
+  - bash 0x04/weblog.sh 0x04/web_log.tsv -r
+  - bash 0x04/weblog.sh 0x04/web_log.tsv -U /pub/winvn/readme.txt
+
 
 after_script:
   - /usr/bin/shellcheck test.sh
