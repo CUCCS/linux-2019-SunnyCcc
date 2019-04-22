@@ -1,0 +1,25 @@
+Age    Amount    Percentage 
+<20    9         1.22%
+20~30  600       81.52%
+<20    127       17.25%
+
+Position     Amount    Percentage
+Midfielder   268       36.41%
+Défenseur   1         0.13%
+Defender     236       32.06%
+Goalie       96        13.04%
+Forward      135       18.34%
+
+the player with the longest name(length:26): 
+Francisco Javier Rodriguez
+Lazaros Christodoulopoulos
+Liassine Cadamuro-Bentaeba
+
+the player with the shortest name(length:2): 
+Faryd Mondragon
+
+the oldest player(age:42): 
+Faryd Mondragon
+
+the youngest player(age:18): 
+Jô
