@@ -28,9 +28,8 @@ script:
 
 after_script:
   - /usr/bin/shellcheck test.sh
-  - /usr/bin/shellcheck image.sh
-  - /usr/bin/shellcheck worldcup.sh
-  - /usr/bin/shellcheck weblog.sh
+  - /usr/bin/shellcheck 0x04/*.sh
+
 
 after_failure:
   - id
